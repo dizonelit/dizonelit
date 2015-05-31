@@ -1,0 +1,176 @@
+FGC_Laptop_Guidelines
+
+1.  Power
+
+2.  Screen
+
+3.  CPU
+
+4.  RAM
+
+5.  Hard Drive
+
+6.  Operating System
+
+7.  Scripts
+
+8.  Youtube test
+
+9.  CD Audio/DVD Video
+
+10. Keyboard
+
+11. Mouse
+
+12. Battery
+
+13. Temperature/Overheating
+
+14. USB Ports
+
+15. Clean Laptop
+
+16. Hardware Specs/System Changes
+
+17. Workspace
+
+18. Default Homepage
+
+19. Browsing History
+
+20. Pricing
+
+21. WiFi
+
+22. WebCam
+
+23. Terminal/Command Line Tips
+
+23.1 Version of Operating System
+
+23.2 
+
+
+?.1	Hard Disk - Partition Editor
+
+?.2	Hard Disk - Health
+	- boot from network
+	- double-click Testools
+	- click Parted Magic
+	- choose 64 bit
+	- click Disk Health
+	- select disk drive
+	- click Attributes tab
+	- check if the following:
+		# 5   Raw value
+		# 7   raw value
+		# 196 raw value
+
+?.3	Hard Disk - Erase
+	- boot from network
+	- double-click Testools
+	- click Parted Magic
+ 	- choose 64 bit
+	- choose Erase Disk
+	- choose Internal
+	- choose ATA Secure Erase button
+	- check if 'Frozen' is displayed
+	- choose Sleep
+	  - the laptop will automatically power off
+	  - power on the laptop as soon as the power goes off
+	- check if 'Not Frozen' replaced 'Frozen'
+	- click checkbox for /dev/sda
+	- click Continue button
+	- click checkbox for 'I allow .....'
+	- click Start button
+	  - the duration time will be displayed (usually about 90 minutes or 		more)
+
+?.1	Battery - Capacity Check
+	- command line: upower -d | less
+	- check if capacity is 100%
+	- get capacity if it is not 100%
+		Formula:  Energy-full divided by energy-full design 				multiplied by 100
+	
+?.2	Battery - Charging
+	- power chord on
+	- check if battery is charging
+	- if it is not charging, replace the battery with one that is 		charging
+
+
+?.1	Power On - Power Source
+	- check if laptop powers on battery alone
+		- replace battery with one 
+	- check if laptop powers on from power chord
+	- check if laptop posers on, on both battery and power chord 
+
+?.2	Power On - Potential Issue
+	- Pop up message 'System program problem detected'
+	- Solution:  Enter the following on the command line
+	- Command line: sudo rm /var/crash/*
+
+?.3  	Power On - Reboot on command line
+	- Command line:	sudo reboot
+
+
+?.1	Webcam - Driver Installation
+	- Command line:	sudo apt-get install cheese
+	
+?.2	Webcam - Test
+
+?.1	Keyboard - Test
+	- Run web browser (Firefox)
+	- Run search engine Google (www.google.com)
+	- Enter keyboardtester on search field
+	- click on www.keyboardtester.com
+	- ?
+
+?.1	Linux Version
+	- command line: lsb release -sd
+
+?.1	Workspace - Set to 1
+	- Settings > Settings Manager > Workspaces
+	- or Settings > Workspaces
+	- ?
+
+?.1	WiFi - Activate
+	- ?
+
+?.2	WiFi - Test
+	- ?
+
+?.1	Ubuntu version
+	- $ lsb_release -a
+        or
+	- $ cat /etc/issue
+
+
+?.1	Command Line Tips
+
+	- display last commands
+		- press upward arrow key
+
+	- command line completion
+		- press Tab key
+
+	- ?
+		- ls
+
+	- ?
+		- du -s
+
+	- ?
+		- clear
+
+
+
+
+
+	
+
+
+
+
+
+ 
+
+
