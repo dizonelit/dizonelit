@@ -1,0 +1,97 @@
+Git - Guidelines
+
+
+1.  Initialize Git repository
+	> git init
+
+2.  Display current status of project in directory
+	$ git status
+
+3.  Add an untracked file to staging area
+	$ git add <filename>
+
+4.  Add all files on the current directory to staging area
+	$ git add -A .
+ 	(the dot stands for the current directory)
+
+
+5.  Unstage a file
+	$ git rm --cached <filename>
+	
+6.  Remove file from staging area
+	$ git reset <filename> 
+
+7.  Store/save/commit changes in the staging area to repository
+	$ git commit -m "<message>" 
+
+8.  Commit/aAdd files with the same name identification
+	$ git add '*.txt'
+	(eg. for all files with extension '.txt')
+
+9.  Commit/add all files from the staging area to repository
+	$ git commit -m 'Add all the txt files'
+
+10. Display all the changes done
+	$ git log
+
+11. Add a remote repository to push files from local repository
+    to the GitHub server
+	$ git remote add origin <remote repository>
+	(eg. git remote add origin https://github.com/try-git/try_git.git)
+
+12. Push/store 'committed' files to remote repository (GitHub server)
+	$ git push -u origin master
+        (The name of our remote is origin and the default local branch name is master. The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do.)
+
+13. Check/display changes made to files in GitHub repository
+	$ git pull origin master
+
+14. Display the difference from the most recent commit
+	$ git diff HEAD
+        ('HEAD' is a pointer referring to the differences in commits)
+
+15. Display the changes made to a staged file
+	$ git diff --staged
+
+16. Unstage/remove staged files
+	$ git reset <directory/filename>
+
+17. Change back files to how they were at the last commit
+	$ git checkout -- <filename>
+
+18. Create a Branch (copy) of file from the 'Master' 	
+	$ git branch <filename>
+
+19. Display current Branch (copy)
+	$ git branch
+
+20. Switch to other Branch
+	$ git checkout <branch>
+
+21. Remove files from disk and stage removal of files
+	$ git rm <filenames>
+	(eg. git rim '*.txt')
+
+22. Commit changes from the Branch
+	$ git commit -m "<comments>"
+
+23. Switch back to the 'Master' 
+	$ git checkout master
+
+24. Merge changes from Branch to Master
+24.1  Switch to Master 
+	$ git checkout master
+24.2  Merge the Branch with Master
+	$ git merge <branchfilename>
+
+25. Delete Branch
+	$ git branch -d <branchfilename>
+
+26. Push/save all changes from local repository to remote repository (GitHub)
+	$ git push
+
+
+
+
+
+	
